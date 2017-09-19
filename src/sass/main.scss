@@ -1,5 +1,8 @@
 /* main.scss */
 
 @import "variables";
-//@import "fonts";
-//@import "mixins";
+@import "fonts";
+@import "mixins";
+body {
+    font-family: 'gotham-black';
+}
