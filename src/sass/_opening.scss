@@ -1,21 +1,21 @@
 ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
-    color: $blue;
+    color: $c-blue;
 }
 
  ::-moz-placeholder {
     /* Firefox 19+ */
-    color: $blue;
+    color: $c-blue;
 }
 
  :-ms-input-placeholder {
     /* IE 10+ */
-    color: $blue;
+    color: $c-blue;
 }
 
  :-moz-placeholder {
     /* Firefox 18- */
-    color: $blue;
+    color: $c-blue;
 }
 
 .os-widget-wrapper {
@@ -26,7 +26,7 @@
                 margin-top: 60px;
                 h1 {
                     font-family: 'gotham_book';
-                    color: $c-dartk-text;
+                    color: $c-dark-text;
                     text-align: center;
                     text-transform: uppercase;
                     font-size: 12px;
@@ -35,12 +35,12 @@
             }
             input {
                 border: 0;
-                border-bottom: 1px solid $blue;
+                border-bottom: 1px solid $c-blue;
                 width: 60%;
                 height: 40px;
                 margin-bottom: 30px;
                 font-family: 'gotham_book';
-                color: $c-dartk-text;
+                color: $c-dark-text;
                 padding: 0 0 0 16px;
             }
             .start-engagement-area {
@@ -55,7 +55,7 @@
                 .start-engagement-area {
                     .start-engagement-button {
                         border-radius: initial;
-                        background: $blue;
+                        background: $c-blue;
                         font-family: 'gotham_black';
                         font-size: 12px;
                     }
