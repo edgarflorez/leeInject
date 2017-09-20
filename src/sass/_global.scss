@@ -1,6 +1,9 @@
 // Global styles overwrite
+body {
+    font-family: 'gotham-black';
+}
 
-.content-page{
+.content-page{ 
     &.desktop{
         background:$c-white;
         margin: 0;
@@ -115,7 +118,7 @@
     &-footer {
         color: #969696;
         font-family: gotham_medium;
-        font-size: 12px; 
+        font-size: 12px;
         text-align: right;
     }
 }
