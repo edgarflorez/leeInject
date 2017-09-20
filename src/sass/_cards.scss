@@ -74,6 +74,12 @@
     .card-option.double {
       width: 47%;
       height: auto;
+      + .card-option {
+        height: auto;
+        .indicator-wrapper-list .os-icon{
+          display: none;
+        }
+      }
       .option-box {
         display: none;
       }
