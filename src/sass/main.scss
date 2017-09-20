@@ -1,9 +1,10 @@
 /* main.scss */
 
 @import "variables";
-@import "global";
 @import "fonts";
 @import "mixins";
+@import "global";
+@import "cards";
 body {
     font-family: 'gotham-black';
 }

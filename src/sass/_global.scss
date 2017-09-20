@@ -2,7 +2,7 @@
 
 .content-page{
     &.desktop{
-        background:#fff;
+        background:$c-white;
         margin: 0;
         padding: 40px;
         width: auto;
@@ -15,7 +15,7 @@
         }
     }
     .content-page-inner-wrapper.one-col {
-        background: #00adef;
+        background: $c-blue;
         margin: 0;
         max-width: 100%;
         padding: 0;
@@ -30,7 +30,7 @@
     .nav-area {
         border: none;
         bottom: -10px;
-        color: #ffffff;
+        color: $c-white;
         font-family: gotham_bold; 
         font-size: 14px;
         position: absolute;
@@ -45,50 +45,51 @@
         }
     }
     a{
-        color:#ffffff !important;
+        color:$c-white !important;
     }
 }
 
-
-.icon-os-common-arrow-right2:before{
-    content: '';
-    border-bottom: 15px solid transparent;
-    border-left: 14px solid #fff;
-    border-top: 15px solid transparent;
-    display: block;
-    height: 0;
-    width: 0;
-}
-.icon-os-common-arrow-right2:after{
-    content: '';
-	margin-left: -5px;
-    border-bottom: 15px solid transparent;
-    border-left: 14px solid #00adef;
-    border-top: 15px solid transparent;
-    display: block;
-    height: 0;
-    margin-top: -30px;
-    width: 0;
-}
-.icon-os-common-arrow-left2:before{
-    content: '';
-    border-bottom: 15px solid transparent;
-    border-right: 14px solid #fff;
-    border-top: 15px solid transparent;
-    display: block;
-    height: 0;
-    width: 0;
-}
-.icon-os-common-arrow-left2:after{
-    content: '';
-	margin-left: 5px;
-    border-bottom: 15px solid transparent;
-    border-right: 14px solid #00adef;
-    border-top: 15px solid transparent;
-    display: block;
-    height: 0;
-    margin-top: -30px;
-    width: 0;
+.icon-os-common-arrow{
+    &-right2:before{
+        content: '';
+        border-bottom: 15px solid transparent;
+        border-left: 14px solid #fff;
+        border-top: 15px solid transparent;
+        display: block;
+        height: 0;
+        width: 0;
+    }
+    &-right2:after{
+        content: '';
+        margin-left: -5px;
+        border-bottom: 15px solid transparent;
+        border-left: 14px solid $c-blue;
+        border-top: 15px solid transparent;
+        display: block;
+        height: 0;
+        margin-top: -30px;
+        width: 0;
+    }
+    &-left2:before{
+        content: '';
+        border-bottom: 15px solid transparent;
+        border-right: 14px solid #fff;
+        border-top: 15px solid transparent;
+        display: block;
+        height: 0;
+        width: 0;
+    }
+    &-left2:after{
+        content: '';
+        margin-left: 5px;
+        border-bottom: 15px solid transparent;
+        border-right: 14px solid $c-blue;
+        border-top: 15px solid transparent;
+        display: block;
+        height: 0;
+        margin-top: -30px;
+        width: 0;
+    }
 }
 
 // Header and Footer styles

@@ -1,0 +1,40 @@
+.os-widget-wrapper.layout-booklet #widget-cards .card .header-area {
+    padding: 0;
+    color: $c-title-card-grey;
+    font-family:   gotham_book;
+    font-size: 13px;
+}
+
+.os-widget-wrapper .os-widget-content .media-area img{
+    padding: 0;
+    width: 100%;
+}
+
+.os-widget-wrapper.color-palette-opinionstage .os-widget-content #widget-cards .card .options-area .card-option{
+    background: $c-card-option-odd;
+    border: 1px solid $c-white;
+    font-family: gotham_book;
+    font-size: 12px;
+}
+
+.os-widget-wrapper.color-palette-opinionstage .os-widget-content #widget-cards .card .options-area .card-option:nth-child(even){
+    background: $c-card-option-even;
+}
+
+.os-widget-wrapper .os-widget-content #widget-cards .card .options-area .card-option .option-wrapper .option-box .text-wrapper{
+    width: 100%;
+}
+
+.os-widget-wrapper.color-palette-opinionstage .os-widget-content #widget-cards .card.pre-selection .options-area .card-option:hover {
+    background: $c-card-option-odd;
+}
+
+.os-widget-wrapper.color-palette-opinionstage .os-widget-content #widget-cards .card.pre-selection .options-area .card-option:nth-child(even):hover {
+    background: $c-card-option-even;
+}
+
+
+.os-widget-wrapper.color-palette-opinionstage .os-widget-content #widget-cards .card.pre-selection .options-area .card-option .option-selected{
+    background: $c-blue;
+    width: 12px;
+}
