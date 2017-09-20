@@ -1,7 +1,10 @@
 // Global styles overwrite
+body {
+    font-family: 'gotham-black';
+}
 
-.content-page.desktop{
-    background:#fff;
+.content-page.desktop {
+    background: #fff;
     margin: 0;
     padding: 40px;
     width: auto;
@@ -18,36 +21,39 @@
 .content-page.desktop .content-page-inner-wrapper.one-col .main-col {
     width: auto;
     margin: 0 210px 50px;
-    
-    -webkit-box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.4 );
-    -moz-box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.4 );
-    box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.4 );
+    -webkit-box-shadow: 10px 10px 41px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 10px 10px 41px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 10px 10px 41px 0px rgba(0, 0, 0, 0.4);
 }
+
 .os-widget-wrapper.color-palette-opinionstage .os-widget-content {
     padding: 30px 50px;
     position: relative;
 }
 
 .os-widget-wrapper.color-palette-opinionstage .os-widget-content .nav-area {
-	bottom: -10px;
-	right: -140px;
+    bottom: -10px;
+    right: -140px;
     position: absolute;
     color: #ffffff;
-    font-family: gotham_bold; 
+    font-family: gotham_bold;
     font-size: 14px;
     border: none;
 }
+
 .nav-area .nav-area-wrapper .cell.nav.nav-left {
     border: none;
 }
+
 .nav-area .nav-area-wrapper .cell.nav.nav-right {
     border: none;
 }
 
-.os-widget-wrapper.color-palette-opinionstage .os-widget-content a{
-    color:#ffffff !important;
+.os-widget-wrapper.color-palette-opinionstage .os-widget-content a {
+    color: #ffffff !important;
 }
-.icon-os-common-arrow-right2:before{
+
+.icon-os-common-arrow-right2:before {
     content: '';
     width: 0;
     height: 0;
@@ -56,7 +62,8 @@
     border-bottom: 15px solid transparent;
     display: block;
 }
-.icon-os-common-arrow-right2:after{
+
+.icon-os-common-arrow-right2:after {
     content: '';
     width: 0;
     height: 0;
@@ -65,9 +72,10 @@
     border-bottom: 15px solid transparent;
     display: block;
     margin-top: -30px;
-	margin-left: -5px;
+    margin-left: -5px;
 }
-.icon-os-common-arrow-left2:before{
+
+.icon-os-common-arrow-left2:before {
     content: '';
     width: 0;
     height: 0;
@@ -76,7 +84,8 @@
     border-bottom: 15px solid transparent;
     display: block;
 }
-.icon-os-common-arrow-left2:after{
+
+.icon-os-common-arrow-left2:after {
     content: '';
     width: 0;
     height: 0;
@@ -85,7 +94,7 @@
     border-bottom: 15px solid transparent;
     display: block;
     margin-top: -30px;
-	margin-left: 5px;
+    margin-left: 5px;
 }
 
 // Header and Footer styles
@@ -111,7 +120,7 @@
     &-footer {
         color: #969696;
         font-family: gotham_medium;
-        font-size: 12px; 
+        font-size: 12px;
         text-align: right;
     }
 }
