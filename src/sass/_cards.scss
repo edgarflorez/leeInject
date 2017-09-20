@@ -1,63 +1,83 @@
 .os-widget-wrapper {
-    &.layout-booklet #widget-cards .card .header-area {
-      padding: 0;
-      color: $c-title-card-grey;
-      font-family: gotham_book;
-      font-size: 13px;
+  #widget-cards .options-area.layout-list .card-option .option-wrapper .option-box .indicator-wrapper-list{
+    padding-right: 15px;
+    .icon-os-quiz-correct:before{
+      content: "\e013";
+      font-family: "glyphicons_halflings";
+      font-size: 20px;
     }
-    .os-widget-content .media-area img {
-      padding: 0;
-      width: 100%;
-    }
-    &.color-palette-opinionstage .os-widget-content #widget-cards .card .options-area .card-option {
-      background: $c-card-option-odd;
-      border: 1px solid $c-white;
-      font-family: gotham_book;
-      font-size: 12px;
-      &:nth-child(even) {
-        background: $c-card-option-even;
-      }
-    }
-    .os-widget-content #widget-cards .card .options-area .card-option .option-wrapper .option-box .text-wrapper {
-      width: 100%;
-    }
-    &.color-palette-opinionstage .os-widget-content #widget-cards .card {
-      &.pre-selection .options-area .card-option {
-        &:hover {
-          background: $c-card-option-odd;
-        }
-        &:nth-child(even):hover {
-          background: $c-card-option-even;
-        }
-        .option-selected {
-          background: $c-blue;
-          width: 12px;
-        }
-      }
-      .card-answer .next-button {
-        font-family: gotham_medium;
-        text-transform: uppercase;
-        padding-left: 25%;
-        padding-right: 25%;
-      }
-    }
-    .os-widget-content #widget-cards .card.kind-trivia.post-selection .options-area .card-option {
-      &.wrong {
-        background: $c-option-wrong;
-        //opacity: .9;
-     
-      }
-      &.correct {
-        background: $c-option-right;
-      }
-    }
-    &.color-palette-opinionstage .os-widget-content #widget-cards .card .options-area {
-      .card-option.double {
-        width: 47%;
-        .option-box {
-          display: none;
-        }
-      }
-      padding: 0;
+    .icon-os-quiz-wrong:before{
+      content: "\e014";
+      font-family: "glyphicons_halflings";
+      font-size: 20px;
     }
   }
+
+  &.layout-booklet #widget-cards .card .header-area {
+    padding: 0;
+    color: $c-title-card-grey;
+    font-family: gotham_book;
+    font-size: 13px;
+  }
+  .os-widget-content .media-area img {
+    padding: 0;
+    width: 100%;
+  }
+  &.color-palette-opinionstage .os-widget-content #widget-cards .card .options-area .card-option {
+    background: $c-card-option-odd;
+    border: 1px solid $c-white;
+    font-family: gotham_book;
+    font-size: 12px;
+    height: 100px;
+    &:nth-child(even) {
+      background: $c-card-option-even;
+    }
+  }
+  .media-area + .options-area{
+    .card-option{
+      height: 50px!important;
+    }
+  }
+  .os-widget-content #widget-cards .card .options-area .card-option .option-wrapper .option-box .text-wrapper {
+    width: 100%;
+  }
+  &.color-palette-opinionstage .os-widget-content #widget-cards .card {
+    &.pre-selection .options-area .card-option {
+      &:hover {
+        background: $c-card-option-odd;
+      }
+      &:nth-child(even):hover {
+        background: $c-card-option-even;
+      }
+      .option-selected {
+        background: $c-blue;
+        width: 12px;
+      }
+    }
+    .card-answer .next-button {
+      font-family: gotham_medium;
+      text-transform: uppercase;
+      padding-left: 25%;
+      padding-right: 25%;
+    }
+  }
+  .os-widget-content #widget-cards .card.kind-trivia.post-selection .options-area .card-option {
+    &.wrong {
+      background: $c-option-wrong;
+      opacity: .9;
+    }
+    &.correct {
+      background: $c-option-right;
+    }
+  }
+  &.color-palette-opinionstage .os-widget-content #widget-cards .card .options-area {
+    .card-option.double {
+      width: 47%;
+      .option-box {
+        display: none;
+      }
+    }
+    padding: 0;
+  }
+}
+
