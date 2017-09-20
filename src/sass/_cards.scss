@@ -40,16 +40,28 @@
 }
 
 .os-widget-wrapper.color-palette-opinionstage .os-widget-content #widget-cards .card .card-answer .next-button{
-    // font-family: gotham_medium;
-	// text-transform: uppercase;
-	// padding-left: 25%;
-	// padding-right: 25%;
+    font-family: gotham_medium;
+	text-transform: uppercase;
+	padding-left: 25%;
+	padding-right: 25%;
 }
 
 .os-widget-wrapper .os-widget-content #widget-cards .card.kind-trivia.post-selection .options-area .card-option.wrong{
-    // background: $c-option-wrong;
-    opacity: 1;
+    background: $c-option-wrong;
+    //opacity: .9;
 }
 .os-widget-wrapper .os-widget-content #widget-cards .card.kind-trivia.post-selection .options-area .card-option.correct{
-    // background: $c-option-right;
+    background: $c-option-right;
+}
+
+.os-widget-wrapper.color-palette-opinionstage .os-widget-content #widget-cards .card .options-area .card-option.double{
+    width: 47%;
+    .option-box{
+        display: none;
+    }
+}
+
+.os-widget-wrapper.color-palette-opinionstage .os-widget-content #widget-cards .card .options-area{
+    outline: 1px solid red;
+    padding: 0;
 }
