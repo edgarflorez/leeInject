@@ -1,10 +1,65 @@
-#widget-opening-card,
-.opening-card {
-    // add class opening-card
-    .header-area {
-        h1 {
-            display: none; //Remove when markup has been updated
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: $blue;
+}
+
+ ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: $blue;
+}
+
+ :-ms-input-placeholder {
+    /* IE 10+ */
+    color: $blue;
+}
+
+ :-moz-placeholder {
+    /* Firefox 18- */
+    color: $blue;
+}
+
+.os-widget-wrapper {
+    .os-widget-content {
+        #widget-opening-card {
+            .header-area {
+                text-align: center;
+                margin-top: 60px;
+                h1 {
+                    font-family: 'gotham_book';
+                    color: $darkText;
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    margin-top: 40px;
+                }
+            }
+            input {
+                border: 0;
+                border-bottom: 1px solid $blue;
+                width: 60%;
+                height: 40px;
+                margin-bottom: 30px;
+                font-family: 'gotham_book';
+                color: $darkText;
+                padding: 0 0 0 16px;
+            }
+            .start-engagement-area {
+                border-bottom: none;
+            }
         }
-        img {}
+    }
+    &.color-palette-opinionstage {
+        .os-widget-content {
+            #widget-opening-card {
+                .start-engagement-area {
+                    .start-engagement-button {
+                        border-radius: initial;
+                        background: $blue;
+                        font-family: 'gotham_black';
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
     }
 }
