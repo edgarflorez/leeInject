@@ -1,30 +1,105 @@
+// Global styles overwrite
+
 .content-page.desktop{
     background:#fff;
     margin: 0;
     padding: 40px;
+    width: auto;
 }
 
-.content-page-inner-wrapper.one-col {
+.content-page .content-page-inner-wrapper.one-col {
     margin: 0;
     background: #00adef;
     padding: 0;
+    max-width: 100%;
+    width: 100%;
 }
 
-.main-col {
-
+.content-page.desktop .content-page-inner-wrapper.one-col .main-col {
+    width: auto;
+    margin: 0 210px 50px;
+    
+    -webkit-box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.4 );
+    -moz-box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.4 );
+    box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.4 );
+}
+.os-widget-wrapper.color-palette-opinionstage .os-widget-content {
+    padding: 30px 50px;
+    position: relative;
 }
 
+.os-widget-wrapper.color-palette-opinionstage .os-widget-content .nav-area {
+	bottom: -10px;
+	right: -140px;
+    position: absolute;
+    color: #ffffff;
+    font-family: gotham_bold; 
+    font-size: 14px;
+    border: none;
+}
+.nav-area .nav-area-wrapper .cell.nav.nav-left {
+    border: none;
+}
+.nav-area .nav-area-wrapper .cell.nav.nav-right {
+    border: none;
+}
+
+.os-widget-wrapper.color-palette-opinionstage .os-widget-content a{
+    color:#ffffff !important;
+}
+.icon-os-common-arrow-right2:before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 14px solid #fff;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    display: block;
+}
+.icon-os-common-arrow-right2:after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 14px solid #00adef;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    display: block;
+    margin-top: -30px;
+	margin-left: -5px;
+}
+.icon-os-common-arrow-left2:before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-right: 14px solid #fff;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    display: block;
+}
+.icon-os-common-arrow-left2:after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-right: 14px solid #00adef;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    display: block;
+    margin-top: -30px;
+	margin-left: 5px;
+}
+
+// Header and Footer styles
 .survey {
-    &-header{
+    &-header {
         height: 80px;
         padding: 15px 5px 5px;
         text-align: left;
         &::after {
             content: '';
-            clear: both;
-            width: 100%;
-            height: 10px;
             background: red;
+            clear: both;
+            height: 10px;
+            width: 100%;
         }
         &--logo-campaign {
             float: left;
@@ -32,5 +107,11 @@
         &--logo-kc {
             float: right;
         }
+    }
+    &-footer {
+        color: #969696;
+        font-family: gotham_medium;
+        font-size: 12px; 
+        text-align: right;
     }
 }
