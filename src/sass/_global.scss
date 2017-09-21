@@ -9,12 +9,18 @@ body {
         margin: 0;
         padding: 40px;
         width: auto;
+        @include breakpoint(xs){
+            padding: 0px;
+        }
         .content-page-inner-wrapper.one-col .main-col {
             margin: 0 210px 50px; 
             width: auto;
             -webkit-box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.4 );
             -moz-box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.4 );
             box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.4 );
+            @include breakpoint(xs){
+                margin: 0;
+            }
         }
     }
     .content-page-inner-wrapper.one-col {
@@ -23,13 +29,20 @@ body {
         max-width: 100%;
         padding: 0;
         width: 100%;
+        @include breakpoint(xs){
+            margin-top: 70px;
+            padding: 68px 10px 75px 10px;
+            width: auto;
+        }
     }
 }
-
 
 .os-widget-wrapper.color-palette-opinionstage .os-widget-content {
     padding: 30px 50px;
     position: relative;
+    @include breakpoint(xs){
+        padding: 30px 20px;
+    }
     .nav-area {
         border: none;
         bottom: -10px;
@@ -38,6 +51,14 @@ body {
         font-size: 14px;
         position: absolute;
         right: -140px;
+        @include breakpoint(xs){
+            bottom: -60px;
+            display: block;
+            left: 50%;
+            margin-left: -57px;
+            right: auto;
+        }
+
         .nav-area-wrapper{
             .cell.nav.nav-left {
                 border: none;
@@ -101,6 +122,13 @@ body {
         height: 80px;
         padding: 15px 5px 5px;
         text-align: left;
+        @include breakpoint(xs){
+            position: absolute;
+            top: 0;
+            padding: 0;
+            left: 0;
+            width: 100%;
+        }
         &::after {
             content: '';
             background: red;
@@ -110,9 +138,24 @@ body {
         }
         &--logo-campaign {
             float: left;
+            @include breakpoint(xs){
+                display: none;
+            }
+        }
+        &--logo-campaign-mobile {
+            display: none;
+            @include breakpoint(xs){
+                margin: 0 auto;
+                display: block;
+            }
         }
         &--logo-kc {
             float: right;
+            @include breakpoint(xs){
+                float: none;
+                margin: 0 auto;
+                display: block;
+            }
         }
     }
     &-footer {
@@ -120,5 +163,12 @@ body {
         font-family: gotham_medium;
         font-size: 12px;
         text-align: right;
+        @include breakpoint(xs){
+            text-align: center;
+            padding: 15px 0 10px; 
+            p{
+                margin: 0;
+            }  
+        }
     }
 }
