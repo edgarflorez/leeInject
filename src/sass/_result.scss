@@ -14,7 +14,7 @@
                     display: block;
                     position: absolute;
                     @include verticalcenter();
-                    width: 48%;
+                    width: 45%;
                     @include breakpoint(xs) {
                         width: 100%;
                     }
@@ -25,7 +25,7 @@
                     }
                 }
                 .header-area {
-                    width: 34%;
+                    width: 45%;
                     position: absolute;
                     left: 0;
                     height: fit-content;
