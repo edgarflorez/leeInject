@@ -37,41 +37,53 @@ body {
     }
 }
 
-.os-widget-wrapper.color-palette-opinionstage .os-widget-content {
-    padding: 30px 50px;
-    position: relative;
-    @include breakpoint(xs){
-        padding: 30px 20px;
-    }
-    .nav-area {
-        border: none;
-        bottom: -10px;
-        color: $c-white;
-        font-family: gotham_bold; 
-        font-size: 14px;
-        position: absolute;
-        right: -140px;
-        @include breakpoint(xs){
-            bottom: -60px;
-            display: block;
-            left: 50%;
-            margin-left: -57px;
-            right: auto;
-        }
+.os-widget-wrapper.color-palette-opinionstage {
 
-        .nav-area-wrapper{
-            .cell.nav.nav-left {
-                border: none;
+    &.layout-booklet.state-opening{
+        .os-widget-content{
+            .nav-area{
+                @include breakpoint(xs){
+                    display: none;
+                }
             }
-            .cell.nav.nav-right {
-                border: none;
+        } 
+    }
+    .os-widget-content {
+        padding: 30px 50px;
+        position: relative;
+        @include breakpoint(xs){
+            padding: 30px 20px;
+        }
+        .nav-area {
+            border: none;
+            bottom: -10px;
+            color: $c-white;
+            font-family: gotham_bold; 
+            font-size: 14px;
+            position: absolute;
+            right: -140px;
+            @include breakpoint(xs){
+                bottom: -60px;
+                display: block;
+                left: 50%;
+                margin-left: -57px;
+                right: auto;
+            }
+    
+            .nav-area-wrapper{
+                .cell.nav.nav-left {
+                    border: none;
+                }
+                .cell.nav.nav-right {
+                    border: none;
+                }
             }
         }
+        a{
+            color:$c-white !important;
+        }
     }
-    a{
-        color:$c-white !important;
-    }
-}
+} 
 
 .icon-os-common-arrow{
     &-right2:before{
@@ -145,8 +157,10 @@ body {
         &--logo-campaign-mobile {
             display: none;
             @include breakpoint(xs){
-                margin: 0 auto;
                 display: block;
+                margin: 0 auto;
+                padding-top: 12px;
+                width: 187px;
             }
         }
         &--logo-kc {
