@@ -39,7 +39,7 @@
                 border-bottom: 1px solid $c-blue;
                 width: 60%;
                 height: 40px;
-                margin-bottom: 30px;
+                margin-bottom: 45px!important;
                 font-family: 'gotham_book';
                 color: $c-dark-text;
                 padding: 0 0 0 16px;
@@ -54,14 +54,53 @@
         .os-widget-content {
             #widget-opening-card {
                 .start-engagement-area {
-                    .start-engagement-button {
+                    .main-form-btn {
                         border-radius: initial;
                         background: $c-blue;
                         font-family: 'gotham_black';
-                        font-size: 12px;
+                        font-size: 14px;
+                        color: white;
+                        text-transform: uppercase;
+                        &:hover {
+                            background: $c-blue-hover;
+                        }
                     }
                 }
             }
         }
+    }
+}
+
+#Name-error {
+    position: absolute;
+    top: 43px;
+    width: 55.5%;
+    font-family: 'gotham_book';
+    font-size: 12px;
+    padding: 15px 10px;
+    background: $c-title-card-grey;
+    border: none;
+    letter-spacing: 0.6px;
+    &:before {
+        border-color: transparent transparent $c-title-card-grey;
+        left: 21px;
+        bottom: 30px;
+    }
+}
+
+#email-error {
+    position: absolute;
+    top: 103px;
+    width: 55.5%;
+    font-family: 'gotham_book';
+    font-size: 12px;
+    padding: 15px 10px;
+    background: $c-title-card-grey;
+    border: none;
+    letter-spacing: 0.6px;
+    &:before {
+        border-color: transparent transparent $c-title-card-grey;
+        left: 21px;
+        bottom: 30px;
     }
 }

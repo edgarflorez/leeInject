@@ -4,24 +4,17 @@
             margin: 100px 0;
             @include clearfix();
             .result-wrapper {
+                @include clearfix();
                 @include flexverticalcenter();
                 .header-area,
                 .media-area {
                     width: 48%;
                     float: left;
-                    .result-title {
+                    .result-text {
                         color: $c-blue;
                         font-family: 'gotham_black';
                         text-transform: uppercase;
                         font-size: 30px;
-                    }
-                    .result-text {
-                        font-family: 'gotham_book';
-                        color: $c-blue;
-                        font-size: 18px;
-                        &::first-letter {
-                            text-transform: capitalize;
-                        }
                         &:after {
                             content: "";
                             display: block;
@@ -40,6 +33,10 @@
                 .header-area {
                     width: 32%;
                     padding: 0 15% 0 2%;
+                    -ms-transform: translate(50px, 100px);
+                    -webkit-transform: translate(50px, 100px);
+                    transform: translate(0px, -50%);
+                    margin-top: 18%;
                 }
             }
         }
