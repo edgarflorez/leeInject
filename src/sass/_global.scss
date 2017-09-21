@@ -36,9 +36,14 @@ body {
         }
     }
 }
-
 .os-widget-wrapper.color-palette-opinionstage {
-
+    &.layout-booklet.state-results{
+        .os-widget-content{
+            .nav-area{
+                display: none;
+            }
+        } 
+    }
     &.layout-booklet.state-opening{
         .os-widget-content{
             .nav-area{
