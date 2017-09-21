@@ -15,12 +15,13 @@
                     position: absolute;
                     @include verticalcenter();
                     width: 48%;
-                    .result-text {
-                        color: $c-blue;
-                        font-family: 'gotham_black';
-                        text-transform: uppercase;
-                        font-size: 30px;
-                        padding: 0;
+                    @include breakpoint(xs) {
+                        width: 100%;
+                    }
+                    @include breakpoint(xs) {
+                        img {
+                            display: none;
+                        }
                     }
                 }
                 .header-area {
@@ -30,6 +31,27 @@
                     height: fit-content;
                     @include clearfix();
                     @include verticalcenter();
+                    .img-mobile {
+                        display: none;
+                        @include breakpoint(xs) {
+                            display: block;
+                            max-width: 260px;
+                            margin: 0 auto;
+                        }
+                    }
+                    .result-text {
+                        color: $c-blue;
+                        font-family: 'gotham_black';
+                        text-transform: uppercase;
+                        font-size: 30px;
+                        padding: 0;
+                    }
+                    .suscribe-area {
+                        @include breakpoint(xs) {
+                            color: $c-blue;
+                            font-size: 16px;
+                        }
+                    }
                     .result-text-description {
                         color: $c-blue;
                         font-family: 'gotham_book';
@@ -41,7 +63,17 @@
                             border-bottom: 1px solid $c-blue;
                             width: 100px;
                             margin-top: 25px;
+                            @include breakpoint(xs) {
+                                display: none;
+                            }
                         }
+                        @include breakpoint(xs) {
+                            margin-bottom: 6vw;
+                            font-size: 15px;
+                        }
+                    }
+                    @include breakpoint(xs) {
+                        width: 90%;
                     }
                 }
             }
@@ -55,6 +87,9 @@
             a {
                 font-family: 'gotham_black';
                 padding: 9px 5px;
+                @include breakpoint(xs) {
+                    margin-top: 5vw;
+                }
             }
         }
     }
