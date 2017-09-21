@@ -44,7 +44,6 @@ body {
             .nav-area{
                 @include breakpoint(xs){
                     display: none;
-                    outline: 1px solid red;
                 }
             }
         } 
