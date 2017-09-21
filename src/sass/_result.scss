@@ -4,17 +4,37 @@
             margin: 100px 0;
             @include clearfix();
             .result-wrapper {
+                min-height: 300px;
                 @include clearfix();
                 @include flexverticalcenter();
-                .header-area,
+                position: relative;
                 .media-area {
+                    @include clearfix();
+                    right: 0;
+                    display: block;
+                    position: absolute;
+                    @include verticalcenter();
                     width: 48%;
-                    float: left;
                     .result-text {
                         color: $c-blue;
                         font-family: 'gotham_black';
                         text-transform: uppercase;
                         font-size: 30px;
+                        padding: 0;
+                    }
+                }
+                .header-area {
+                    width: 34%;
+                    position: absolute;
+                    left: 0;
+                    height: fit-content;
+                    @include clearfix();
+                    @include verticalcenter();
+                    .result-text-description {
+                        color: $c-blue;
+                        font-family: 'gotham_book';
+                        font-size: 18px;
+                        margin-top: 10px;
                         &:after {
                             content: "";
                             display: block;
@@ -23,21 +43,18 @@
                             margin-top: 25px;
                         }
                     }
-                    .result-text-description {
-                        color: $c-dark-text;
-                        font-family: 'gotham_book';
-                        font-size: 12px;
-                        margin-top: 10px;
-                    }
                 }
-                .header-area {
-                    width: 32%;
-                    padding: 0 15% 0 2%;
-                    -ms-transform: translate(50px, 100px);
-                    -webkit-transform: translate(50px, 100px);
-                    transform: translate(0px, -50%);
-                    margin-top: 18%;
-                }
+            }
+        }
+    }
+}
+
+.os-widget-wrapper {
+    &.color-palette-opinionstage {
+        .os-widget-content {
+            a {
+                font-family: 'gotham_black';
+                padding: 9px 5px;
             }
         }
     }
